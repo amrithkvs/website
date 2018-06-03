@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: "proxima-nova";
+    font-family: "proxima-nova" sans-serif;
     src: url(https://use.typekit.net/af/2e3ccc/00000000000000003b9b0939/27/l?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n6&v=3) format("woff2") , url(https://use.typekit.net/af/2e3ccc/00000000000000003b9b0939/27/d?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n6&v=3) format("woff") , url(https://use.typekit.net/af/2e3ccc/00000000000000003b9b0939/27/a?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n6&v=3) format("opentype");
     font-style: normal;
     font-weight: 600
