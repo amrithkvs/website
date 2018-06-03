@@ -1,4 +1,6 @@
-@import url(https://p.typekit.net/p.css?s=1&k=dsk5bnt&ht=tk&f=139.169.173.175&a=1433275&app=typekit&e=css);@font-face {
+@import url(https://p.typekit.net/p.css?s=1&k=dsk5bnt&ht=tk&f=139.169.173.175&a=1433275&app=typekit&e=css);
+
+@font-face {
     font-family: "proxima-nova";
     src: url(https://use.typekit.net/af/8e3108/00000000000000003b9b093b/27/l?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n7&v=3) format("woff2") , url(https://use.typekit.net/af/8e3108/00000000000000003b9b093b/27/d?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n7&v=3) format("woff") , url(https://use.typekit.net/af/8e3108/00000000000000003b9b093b/27/a?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n7&v=3) format("opentype");
     font-style: normal;
@@ -25,6 +27,21 @@
     font-style: normal;
     font-weight: 400
 }
+
+@font-face {
+    font-family: "proxima-nova";
+    src: url(https://use.typekit.net/af/1426a3/00000000000000003b9b0934/27/l?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n4&v=3) format("woff2") , url(https://use.typekit.net/af/1426a3/00000000000000003b9b0934/27/d?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n4&v=3) format("woff") , url(https://use.typekit.net/af/1426a3/00000000000000003b9b0934/27/a?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n4&v=3) format("opentype");
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: "proxima-nova";
+    src: url(https://use.typekit.net/af/1426a3/00000000000000003b9b0934/27/l?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n4&v=3) format("woff2") , url(https://use.typekit.net/af/1426a3/00000000000000003b9b0934/27/d?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n4&v=3) format("woff") , url(https://use.typekit.net/af/1426a3/00000000000000003b9b0934/27/a?primer=388f68b35a7cbf1ee3543172445c23e26935269fadd3b392a13ac7b2903677eb&fvd=n4&v=3) format("opentype");
+    font-style: bold;
+    font-weight: 400
+}
+
 
 .tk-proxima-nova {
     font-family: "proxima-nova",sans-serif
@@ -1726,11 +1743,12 @@ a.button {
     animation-delay: 0;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both
+
 }
 
 @media screen and (min-width: 1000px) {
     .hero__title {
-        text-align:left
+        text-align:left;
     }
 }
 
@@ -4008,4 +4026,216 @@ a.button {
     display: inline;
     font-size: inherit;
     font-weight: inherit
+}
+
+
+.button-container {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 500;
+  font-style: bold;
+  letter-spacing: 1px;
+  height: 56px;
+  width: 248px;
+  -webkit-perspective: 700;
+  -ms-perspective: 700;
+  perspective: 700;
+}
+
+.button-container .flipper {
+  transition: all 0.5s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.button-container .button {
+  height: 45px;
+  width: 208px;
+  border-radius: 4px;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-box-shadow: 1px 2px 4px -1px rgba(60, 60, 60, 0.64);
+  box-shadow: 1px 2px 4px -1px rgba(60, 60, 60, 0.64);
+}
+
+.button-container .button.front {
+  z-index: 10;
+}
+
+.button-container .button.back {
+  color: white;
+  font-size: 29px;
+  font-weight: 700;
+  font-style: bold; 
+  text-align: center;
+}
+
+.button a, .button a:hover {
+  color: #ffffff;
+}
+
+/* -------------------------------- 
+      3D-Flip
+-------------------------------- */
+
+.button-flip3d-vertical2 .flipper-flip3d-vertical2 {
+  transform-origin: 100% 28px;
+}
+
+.button-flip3d-vertical2 .front {
+  transform: translateZ(20px);
+  background-image: #3340ff;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: proxima-nova;
+  text-align: center;
+  font-weight: 700;
+  height: 45px;
+  color: #fff;
+}
+
+.button-flip3d-vertical2 .back {
+  -webkit-transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(20px);
+  -ms-transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(20px);
+  transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(20px);
+  background-image: #3340ff;
+  text-align: center;
+  height: 45px;
+}
+
+.button-flip3d-vertical2:hover .flipper-flip3d-vertical2 {
+  transform: rotateX(90deg);
+}
+
+/* -------------------------------- 
+    Custom Animations
+-------------------------------- */
+
+.fadeInDownSwing {
+  -moz-animation-name: fadeInDownSwing;
+  -webkit-animation-name: fadeInDownSwing;
+  animation-name: fadeInDownSwing;
+  animation-fill-mode: both;
+}
+
+@-moz-keyframes fadeInDownSwing {
+  0% {
+    opacity: 0;
+    -moz-transform: translate3d(-5%, -100%, 0);
+    transform: translate3d(-5%, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -moz-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInDownSwing {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-5%, -100%, 0);
+    transform: translate3d(-5%, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDownSwing {
+  0% {
+    opacity: 0;
+    transform: translate3d(-5%, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.slideInUp {
+  -moz-animation-name: slideInUp;
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  animation-fill-mode: both;
+}
+
+@-moz-keyframes slideInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -moz-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes slideInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* -------------------------------- 
+    Vendor Customization
+-------------------------------- */
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #9bc9ee;
+  background: -webkit-linear-gradient(left, #4776E6, #8E54E9);
+  background: -moz-linear-gradient(right, #4776E6, #8E54E9);
+  background: linear-gradient(right, #4776E6, #8E54E9);
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+}
+
+.dark .pace .pace-progress {
+  background: #fff;
 }
