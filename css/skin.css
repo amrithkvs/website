@@ -719,7 +719,7 @@ h3--light,.page-h3--light {
     font-weight: 400
 }
 
-.title-eyebrow--white {
+.title-eyebrow--white #dribbble:target {
     color: #fff
 }
 
@@ -2847,7 +2847,7 @@ a.button {
     fill: #3340ff
 }
 
-.slide-dribbble .content-text {
+.slide-dribbble .content-text #dribbble:target {
     max-width: 550px
 }
 
