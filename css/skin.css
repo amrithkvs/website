@@ -3373,6 +3373,21 @@ a.button {
     bottom: -10px
 }
 
+
+.card--designing-landing-pages .visual .green-shape {
+    width: 150px;
+    height: 150px;
+    background: #27E889;
+    background: linear-gradient(135deg,#27E889 0%,#0E76BC 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27E889', endColorstr='#0E76BC',GradientType=1 );
+    border-radius: 20px;
+    position: absolute;
+    left: -75px;
+    right: auto;
+    top: auto;
+    bottom: -10px
+}
+
 .card--designing-landing-pages .visual .orangess-shape {
     width: 150px;
     height: 150px;
