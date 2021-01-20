@@ -1039,7 +1039,7 @@ body {
 }
 
 .footer{
-  padding: 0.8rem 3rem 2rem;
+  padding: 5px;
   background-color: #000;
   margin-top: 3rem;
 
@@ -1284,7 +1284,7 @@ header {
 
 
 .menu-float-right{
-  float:right;
+  float:center;
 }
 
 .menu-float-right p{
