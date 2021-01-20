@@ -5,6 +5,10 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.footer-menu{
+  float:right;
+}
 /*
 #home img{
   filter:drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.2));
@@ -1284,7 +1288,7 @@ header {
 
 
 .menu-float-right{
-  float:center;
+  float:right;
 }
 
 .menu-float-right p{
